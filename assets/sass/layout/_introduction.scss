@@ -325,7 +325,7 @@
             padding-top: 95px;
             padding-bottom: 100px;
         }
-        &:before { 
+        &:before {
             background-color: rgba($black,0.2);
         }
         .frontpage-banner-content {
@@ -550,7 +550,6 @@
         padding-top: 200px;
         padding-bottom: 150px;
         position: relative;
-        overflow: hidden;
         @media only screen and (max-width: 1366px) {
             padding-top: 150px;
             padding-bottom: 0;
@@ -706,7 +705,7 @@
                 display: none;
             }
 			&.one {
-                top: 755px; 
+                top: 755px;
                 right: 42.5%;
                 z-index: 1;
                 -webkit-animation: linear bt-topBottom-40 3s infinite;
@@ -815,7 +814,7 @@
     .hero-title {
         font-weight: normal;
         color: $color__heading;
-        font-size: 85px; 
+        font-size: 85px;
         position: relative;
         margin-bottom: 30px;
         line-height: 1.05em;
