@@ -61,9 +61,9 @@ input::-moz-focus-inner {
 .btn-default {
 	border-radius: 7px;
 	padding: 10px 25px 8px;
-	color: $purple;
+	color: $nevy;
 	background-color: transparent;
-	border: 1px solid $purple;
+	border: 1px solid $nevy;
 	position: relative;
 	z-index: 1;
 	-webkit-transition: all 0.4s;
@@ -79,7 +79,7 @@ input::-moz-focus-inner {
 	&:hover,
 	&:focus {
 		color: $white !important;
-		background-color: $purple;
+		background-color: $nevy;
 	}
 	&.btn-white {
 		color: $color__secondary;
