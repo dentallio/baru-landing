@@ -1,0 +1,308 @@
+.site-header {
+	padding: 0px;
+	background-color: $white;
+	.navigation-area {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		min-height: 70px;
+		.site-branding a {
+			display: inline-block;
+		}
+		.header-navigation-right {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: end;
+			-ms-flex-pack: end;
+			justify-content: flex-end;
+		}
+		> .site-navigation {
+			@media only screen and (max-width: 1199px) {
+				display: none;
+			}
+		}
+	}
+	.mobile-sidebar-menu {
+		display: none;
+		@media only screen and (max-width: 1199px) {
+			display: block;
+		}
+	}
+	.btn-sing-area {
+		@media only screen and (max-width: 360px) {
+			display: none;
+		}
+		.btn-primary {
+			padding: 10px 35px 8px;
+			font-size: 16px;
+			@media only screen and (max-width: 575px) {
+				padding: 8px 20px 7px;
+			}
+		}
+	}
+	&.default-header-style,
+	&.header-style-one,
+	&.header-style-five {
+		padding-top: 20px;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		background-color: transparent;
+		@media only screen and (max-width: 1199px) {
+			padding-top: 5px;
+		}
+		.site-branding {
+			padding-right: 15px;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+		}
+		.hamburger-menus {
+			margin-left: 20px;
+		}
+	}
+	&.header-style-one,
+	&.header-style-three {
+		.mobile-sidebar-menu {
+			display: block;
+		}
+		.hamburger-menus {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+		}
+	}
+	&.header-style-two {
+		padding: 15px 0;
+		@media only screen and (max-width: 1199px) {
+			padding: 5px 0;
+		}
+		.btn-sing-area {
+			padding-left: 25px;
+			@media only screen and (max-width: 480px) {
+				display: none;
+			}
+		}
+		.hamburger-menus {
+			margin-left: 25px;
+		}
+	}
+	&.header-style-three {
+		padding: 15px 0;
+		.hamburger-menus {
+			margin-left: 20px;
+		}
+		.site-navigation {
+			display: none;
+		}
+		.social-status-area {
+			margin-bottom: -5px;
+			@media only screen and (max-width: 480px) {
+				display: none;
+			}
+		}
+		.social-status > a {
+			&:hover,
+			&:focus {
+				color: $color__primary !important;
+				background: -webkit-linear-gradient(left, $color__secondary, $color__primary);
+				background: linear-gradient(to right, $color__secondary, $color__primary);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+	&.header-style-four {
+		position: absolute;
+		z-index: 3;
+		left: 0;
+		height: 965px;
+		background-color: #141414;
+		width: 160px;
+		@media only screen and (max-width: 1366px) {
+			width: 120px;
+			height: 850px;
+		}
+		@media only screen and (max-width: 1366px) {
+			height: 750px;
+		}
+		@media only screen and (max-width: 767px) {
+            height: 600px;
+        }
+        @media only screen and (max-width: 575px) {
+			height: 520px;
+			width: 90px;
+        }
+		.navigation-area {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			height: 100%;
+			padding-top: 35px;
+			@media only screen and (max-width: 575px) {
+				padding-top: 20px;
+			}
+			> .site-navigation {
+				display: none;
+			}
+		}
+		.mobile-sidebar-menu {
+			display: block;
+		}
+		.hamburger-menus-area {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			font-weight: lighter;
+			font-size: 20px;
+			@media only screen and (max-width: 575px) {
+				font-size: 16px;
+			}
+			.hamburger-menus {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				-webkit-box-pack: start;
+				    -ms-flex-pack: start;
+				        justify-content: flex-start;
+				-webkit-box-align: start;
+				    -ms-flex-align: start;
+				        align-items: flex-start;
+				width: 60px;
+				margin-bottom: 8px;
+				@media only screen and (max-width: 575px) {
+					width: 40px;
+				}
+				> span {
+					background-color: $white;
+					width: 60px;
+					margin: 5px 0;
+					@media only screen and (max-width: 575px) {
+						width: 40px;
+					}
+					&:nth-child(1) {
+						width: 20px;
+						@media only screen and (max-width: 575px) {
+							width: 15px;
+						}
+					}
+					&:nth-child(2) {
+						width: 40px;
+						@media only screen and (max-width: 575px) {
+							width: 30px;
+						}
+					}
+				}
+				&:hover > span {
+					width: 60px !important;
+					@media only screen and (max-width: 575px) {
+						width: 40px !important;
+					}
+				}
+				&.click-menu > span {
+					width: 60px !important;
+					position: relative;
+					@media only screen and (max-width: 575px) {
+						width: 40px !important;
+					}
+					&:nth-child(1) {
+						top: -17px;
+						@media only screen and (max-width: 575px) {
+							top: -3px;
+						}
+					}
+				}
+		    }
+		}
+		.social-status-area .social-status {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			padding-bottom: 40px;
+			@media only screen and (max-width: 575px) {
+				padding-bottom: 15px;
+			}
+			> a {
+				color: $white;
+				margin: 0;
+				padding: 5px 0;
+				&:hover,
+				&:focus {
+					color: $color__primary !important;
+					background: -webkit-linear-gradient(left, $color__secondary, $color__primary);
+					background: linear-gradient(to right, $color__secondary, $color__primary);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+/*-------------------------------------------------
+	[ ## Sticky header ]
+*/
+#sticky-header .site-header {
+	display: none;
+}
+#sticky-header.active {
+	display: none;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	.mobile-sidebar-menu {
+		display: none;
+	}
+	.site-header {
+		background-color: $white;
+		box-shadow: 0px 5px 10px -5px rgba($black, 0.15);
+		position: relative;
+		display: block;
+		.megamenu .megamenu-main {
+			top: 100% !important;
+		}
+		&.default-header-style,
+		&.header-style-one,
+		&.header-style-three,
+		&.header-style-two,
+		&.header-style-five  {
+			padding: 5px 0;
+		}
+		&.header-style-one .hamburger-menus, 
+		&.header-style-three .hamburger-menus {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+body {
+    background-color: #1E1E1E;
+}
+
+.site-footer,
+.client-testimonial .details,
+.work-brand-block.style-two .brands-link,
+.service-item.style-three {
+    background-color: #141414;
+}
+h1, h2, h3, h4, h5, h6,
+.read-more-text,
+.site-footer .widget-title,
+.fanfact-promo-numbers .promo-number.style-three .promo-title,
+.portfolio-filter li a {
+    color: #fff;
+}
+
+.btn-primary.btn-gradient-45 {
+    font-size: 16px;
+}
+
+.work-brand-block .brands-link img {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+}

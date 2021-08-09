@@ -1,0 +1,132 @@
+.widget {
+	margin-bottom: 60px;
+	@media only screen and (max-width: 767px) {
+		margin-bottom: 45px;
+	}
+	select {
+		width: 100%;
+		border: 1px solid #ebebeb;
+		padding: 0.4em 0.8em;
+		outline: none;
+	}
+	ul,
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.widget-title-area {
+		position: relative;
+	}
+	.widget-title {
+		font-size: 20px;
+		font-weight: normal;
+		margin-bottom: 30px;
+		color: $color__heading;
+	}
+	pre {
+		padding: 0.5em;
+	}
+	label {
+		margin-bottom: 0;
+	}
+	option {
+		padding: 0.2em 1em;
+	}
+	input[type='text'],
+	input[type='email'],
+	input[type='url'],
+	input[type='password'],
+	input[type='search'],
+	textarea {
+		padding: 0.5em 1em;
+		&:focus {
+			box-shadow: none !important;
+		}
+	}
+}
+.sidebar-items {
+	padding-left: 40px;
+	@media only screen and (max-width: 1199px) {
+		padding-left: 10px;
+	}
+	@media only screen and (max-width: 991px) {
+		margin-top: 80px;
+		padding-left: 0px;
+		.widget:last-child {
+			margin-bottom: 0;
+		}
+	}
+	@media only screen and (max-width: 991px) {
+		margin-bottom: -45px;
+	}
+	.widget {
+		margin-bottom: 45px;
+		&.bt-instafeed-widget #instafeed-sidebar {
+			margin: -4px;
+			> .feed-item {
+				-moz-box-flex: 0;
+				flex: 0 0 33.33%;
+				max-width: 33.33%;
+				padding: 4px;
+			}
+		}
+	}
+	.widget-title {
+		font-size: 20px;
+		font-weight: normal;
+		margin-bottom: 32px;
+		color: $color__heading;
+		text-transform: capitalize;
+		@media only screen and (max-width: 575px) {
+			font-size: 18px;
+		}
+	}
+	> .widget:last-of-type {
+		margin-bottom: 0;
+	}
+	&.style-two {
+		.widget-title {
+			font-size: 21px;
+			font-weight: normal;
+			margin-bottom: 17px;
+			border-bottom: 0px solid;
+			> span {
+				display: inline-block;
+				position: relative;
+				padding-right: 20px;
+				&:before {
+					content: '';
+					height: 4px;
+					width: 50px;
+					background-color: $color__primary;
+					position: absolute;
+					right: -50px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+			+ div,
+			+ ul,
+			+ select,
+			+ ol {
+				@media only screen and (max-width: 991px) {
+					margin-top: 0px;
+				}
+			}
+		}
+	}
+}
+.widget-title {
+	+ div,
+	+ ul,
+	+ select,
+	+ ol {
+		@media only screen and (max-width: 991px) {
+			margin-top: 30px;
+		}
+		@media only screen and (max-width: 767px) {
+			margin-top: 25px;
+		}
+	}
+}

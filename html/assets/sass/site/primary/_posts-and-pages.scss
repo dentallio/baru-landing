@@ -1,0 +1,122 @@
+.sticky {
+	display: block;
+}
+.hentry {
+	margin: 0 0 75px;
+}
+.page-content {
+	margin: 1.4em 0;
+}
+.entry-summary {
+	@extend .page-content;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 2.1em;
+}
+@media only screen and (max-width: 991px) {
+	.sidebar-items {
+		margin-top: 80px;
+	}
+}
+
+/*-------------------------------------------------
+    [ ### Page Title ]
+*/
+.page-title-area {
+	padding-top: 180px;
+	padding-bottom: 120px;
+	@media only screen and (max-width: 1199px) {
+		padding-top: 165px;
+		padding-bottom: 105px;
+	}
+	@media only screen and (max-width: 991px) {
+		padding-top: 145px;
+		padding-bottom: 87px;
+	}
+	@media only screen and (max-width: 575px) {
+		padding-top: 125px;
+		padding-bottom: 70px;
+	}
+	&:before {
+		opacity: 0.7;
+		background-color: $white;
+	}
+	.page-header-content {
+		text-align: center;
+		@media only screen and (max-width: 991px) {
+			padding-top: 5px;
+		}
+	}
+	.page-title {
+		margin-bottom: 2px;
+		font-size: 65px;
+		text-transform: capitalize;
+		line-height: 1.15em;
+		color: $color__heading;
+		font-weight: normal;
+		@media only screen and (max-width: 1199px) {
+			font-size: 48px;
+		}
+		@media only screen and (max-width: 991px) {
+			font-size: 42px;
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: 36px;
+		}
+		@media only screen and (max-width: 480px) {
+			font-size: 32px;
+		}
+	}
+	.breadcrumb-area {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+}
+
+/*-------------------------------------------------
+    [ ### Breadcrumb ]
+*/
+.breadcrumb {
+	background-color: transparent;
+	border-radius: 0;
+	margin-bottom: 0;
+	padding: 0;
+	.breadcrumb-item {
+		font-size: 16px;
+		text-transform: capitalize;
+		padding: 5px 15px;
+		position: relative;
+		z-index: 2;
+		color: $color__heading;
+		@media only screen and (max-width: 767px) {
+			font-size: 14px;
+		}
+		&:before {
+			position: absolute;
+			content: '\ea7c';
+			font-family: $font_ico;
+			font-size: 15px;
+			padding: 0;
+			left: -6px;
+			top: 5px;
+			color: $color__heading;
+		}
+		&:first-child:before {
+			content: ' ';
+		}
+		> a {
+			&:hover,
+			&:focus {
+				color: $color__primary;
+			}
+		}
+	}
+}
