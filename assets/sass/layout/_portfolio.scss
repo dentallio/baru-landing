@@ -56,10 +56,10 @@
     &.style-two {
         &.pd-t-100 {
             @media only screen and (max-width: 1199px) {
-                padding-top: 80px; 
+                padding-top: 80px;
             }
             @media only screen and (max-width: 575px) {
-                padding-top: 60px; 
+                padding-top: 60px;
             }
         }
         .portfolio-scroll-slider {
@@ -98,7 +98,7 @@
         .row > .text-right {
             text-align: center !important;
         }
-        .no-gutters > .row { 
+        .no-gutters > .row {
             @media only screen and (max-width: 767px) {
                 margin-bottom: -30px;
             }
@@ -201,7 +201,7 @@
                 top: 20px;
                 left: 20px;
             }
-            .heading { 
+            .heading {
                 font-size: 25px;
                 font-weight: normal;
                 margin-bottom: 5px;
@@ -319,9 +319,9 @@
         }
     }
     .portfolio-thumb {
-        position: relative; 
+        position: relative;
         overflow: hidden;
-        height: 100%;
+        height: 200px;
         width: 100%;
         display: -ms-flexbox;
         display: -webkit-box;
@@ -423,10 +423,10 @@
             -webkit-transform: translateY(100%);
                     transform: translateY(100%);
             @media only screen and (max-width: 1366px) {
-                font-size: 24px; 
+                font-size: 24px;
             }
             @media only screen and (max-width: 575px) {
-                font-size: 20px; 
+                font-size: 20px;
             }
             a:hover,
             a:focus {
@@ -443,10 +443,10 @@
             -webkit-transform: translateY(100%);
                     transform: translateY(100%);
             @media only screen and (max-width: 1366px) {
-                font-size: 16px; 
+                font-size: 16px;
             }
             @media only screen and (max-width: 575px) {
-                font-size: 15px; 
+                font-size: 15px;
             }
         }
     }
@@ -496,7 +496,7 @@
                 opacity: 0.85;
             }
         }
-    } 
+    }
 }
 
 .portfolio_mouseleve_title {
