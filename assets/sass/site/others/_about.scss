@@ -33,13 +33,13 @@
 				bottom: -5px;
 				left: calc(50% - 695px);
 				-webkit-animation: linear bt-bottomTop-40 4s infinite;
-             animation: linear bt-bottomTop-40 4s infinite;
+           animation: linear bt-bottomTop-40 4s infinite;
 			}
 			&.two {
 				top: -25px;
 				right: calc(50% - 670px);
-				-webkit-animation: linear bt-bottomTop-40 4s infinite;
-             animation: linear bt-bottomTop-40 4s infinite;
+			 	-webkit-animation: linear bt-bottomTop-40 4s infinite;
+         animation: linear bt-bottomTop-40 4s infinite;
 			}
 		}
 		.waves-effect.bottom {
@@ -122,8 +122,8 @@
 			&.one {
 				bottom: 175px;
                 right: calc(50% - 695px);
-                -webkit-animation: linear bt-bottomTop-40 4s infinite;
-                    animation: linear bt-bottomTop-40 4s infinite;
+                //-webkit-animation: linear bt-bottomTop-40 4s infinite;
+                //    animation: linear bt-bottomTop-40 4s infinite;
                 @media only screen and (max-width: 1620px) {
                     right: calc(50% - 660px);
                 }

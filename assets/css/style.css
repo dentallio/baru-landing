@@ -10530,7 +10530,7 @@ a:hover, a:active {
 @media only screen and (max-width: 1620px) {
   /* line 184, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_sections.scss */
   .our-skill-block.style-two .element-group > .element.one {
-    right: calc(50% - 660px);
+    right: calc(40% - 660px);
   }
 }
 
@@ -13226,8 +13226,6 @@ a:hover, a:active {
 .about-us-block.style-two .element-group > .element.one {
   bottom: 175px;
   right: calc(50% - 695px);
-  -webkit-animation: linear bt-bottomTop-40 4s infinite;
-  animation: linear bt-bottomTop-40 4s infinite;
 }
 
 @media only screen and (max-width: 1620px) {
