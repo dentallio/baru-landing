@@ -7292,7 +7292,10 @@ a:hover, a:active {
   padding-top: 200px;
   padding-bottom: 150px;
   position: relative;
-  background-size: cover;
+  background-image: url(https://html.creativegigs.net/deski/deski/images/shape/190.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -7317,20 +7320,20 @@ a:hover, a:active {
   }
 }
 
-/* line 566, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 569, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three > .element-group > .element {
   z-index: 0;
   position: absolute;
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 566, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 569, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three > .element-group > .element {
     display: none;
   }
 }
 
-/* line 572, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 575, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three > .element-group > .element.one {
   top: 355px;
   left: 25px;
@@ -7338,13 +7341,13 @@ a:hover, a:active {
   animation: linear bt-bottomTop-40 3s infinite;
 }
 
-/* line 578, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 581, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three > .element-group > .element.two {
   top: 480px;
   left: 0;
 }
 
-/* line 583, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 586, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three .hero-title {
   font-size: 65px;
   font-weight: normal;
@@ -7353,92 +7356,92 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 583, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 586, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-title {
     font-size: 54px;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 583, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 586, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-title {
     font-size: 48px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 583, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 586, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-title {
     font-size: 42px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 583, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 586, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-title {
     font-size: 38px;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  /* line 583, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 586, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-title {
     font-size: 32px;
   }
 }
 
-/* line 603, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 606, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three .hero-title > span {
   font-weight: 600;
   font-style: italic;
 }
 
-/* line 608, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 611, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three .hero-desc {
   color: #000000;
   padding-right: 150px;
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 608, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 611, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-desc {
     padding-right: 100px;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  /* line 608, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 611, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-desc {
     padding-right: 0;
   }
 }
 
-/* line 618, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 621, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three .hero-mockup-area {
   position: relative;
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 618, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 621, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-mockup-area {
     display: none;
   }
 }
 
-/* line 623, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 626, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three .hero-mockup-area .element-group > .element {
   z-index: 0;
   position: absolute;
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 623, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 626, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-three .hero-mockup-area .element-group > .element {
     display: none;
   }
 }
 
-/* line 629, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 632, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three .hero-mockup-area .element-group > .element.one {
   bottom: -130px;
   left: -140px;
@@ -7446,13 +7449,13 @@ a:hover, a:active {
   animation: linear bt-topBottom-40 3s infinite;
 }
 
-/* line 635, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 638, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three .hero-mockup-area .element-group > .element.two {
   top: -115px;
   right: -17px;
 }
 
-/* line 639, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 642, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-three .hero-mockup-area .element-group > .element.three {
   top: -85px;
   right: -50px;
@@ -7460,56 +7463,56 @@ a:hover, a:active {
   animation: linear bt-bottomTop-40 3s infinite;
 }
 
-/* line 648, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 651, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four {
   position: relative;
   height: 965px;
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 648, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 651, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four {
     height: 850px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 648, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 651, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four {
     height: 750px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 648, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 651, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four {
     height: 600px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 648, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 651, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four {
     height: 520px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 663, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 666, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .container-fluid {
     margin-left: 100px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 663, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 666, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .container-fluid {
     margin-left: 75px;
     max-width: calc(100% - 75px);
   }
 }
 
-/* line 672, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 675, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four .frontpage-bg {
   position: absolute;
   left: 160px;
@@ -7520,7 +7523,7 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 672, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 675, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-bg {
     width: calc(50% - 50px);
     left: 120px;
@@ -7528,59 +7531,59 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 672, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 675, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-bg {
     width: calc(50% - 80px);
   }
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 672, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 675, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-bg {
     width: calc(100% - 120px);
   }
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 672, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 675, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-bg {
     width: calc(100% - 90px);
     left: 90px;
   }
 }
 
-/* line 693, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 696, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four .frontpage-bg:before {
   opacity: 0;
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 693, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 696, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-bg:before {
     opacity: 0.6;
   }
 }
 
-/* line 699, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 702, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four .frontpage-bg + div {
   position: relative;
   z-index: 1;
 }
 
-/* line 704, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 707, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element {
   z-index: 0;
   position: absolute;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 704, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 707, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element {
     display: none;
   }
 }
 
-/* line 710, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 713, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element.one {
   top: 755px;
   right: 42.5%;
@@ -7590,13 +7593,13 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 710, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 713, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element.one {
     display: none;
   }
 }
 
-/* line 720, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 723, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element.two {
   top: 550px;
   right: 115px;
@@ -7605,7 +7608,7 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 720, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 723, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element.two {
     top: 80px;
     right: 85px;
@@ -7613,55 +7616,55 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 720, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 723, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element.two {
     top: 50px;
     right: 50px;
   }
 }
 
-/* line 734, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 737, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element.three {
   top: 70px;
   right: 65px;
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 734, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 737, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four > .element-group > .element.three {
     display: none;
   }
 }
 
-/* line 742, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 745, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four .frontpage-banner-content {
   margin-left: -40px;
   padding-right: 120px;
 }
 
 @media only screen and (max-width: 1620px) {
-  /* line 742, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 745, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-banner-content {
     padding-right: 0px;
   }
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 742, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 745, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-banner-content {
     margin-left: 0px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 742, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 745, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-banner-content {
     margin-left: -25px;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 742, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 745, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-banner-content {
     margin-left: 190px;
     position: relative;
@@ -7671,7 +7674,7 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 742, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 745, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-banner-content {
     margin-left: 0;
     padding-left: 70px;
@@ -7680,14 +7683,14 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 742, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 745, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .frontpage-banner-content {
     padding-left: 30px;
     width: 100%;
   }
 }
 
-/* line 770, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 773, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four .hero-title {
   font-size: 65px;
   font-weight: normal;
@@ -7697,93 +7700,93 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1860px) {
-  /* line 770, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 773, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-title {
     padding-right: 65px;
   }
 }
 
 @media only screen and (max-width: 1772px) {
-  /* line 770, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 773, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-title {
     padding-right: 0px;
   }
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 770, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 773, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-title {
     font-size: 54px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 770, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 773, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-title {
     font-size: 46px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 770, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 773, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-title {
     font-size: 42px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 770, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 773, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-title {
     font-size: 38px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 770, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 773, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-title {
     font-size: 28px;
   }
 }
 
-/* line 798, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 801, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four .hero-desc {
   padding-right: 120px;
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 798, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 801, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-desc {
     padding-right: 60px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 798, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 801, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .hero-desc {
     padding-right: 0px;
   }
 }
 
-/* line 807, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 810, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section.frontpage-banner-style-four .btn-primary.btn-gradient-45 {
   font-size: 20px;
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 807, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 810, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .btn-primary.btn-gradient-45 {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 807, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 810, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section.frontpage-banner-style-four .btn-primary.btn-gradient-45 {
     font-size: 16px;
   }
 }
 
-/* line 817, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 820, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section .hero-title {
   font-weight: normal;
   color: #000000;
@@ -7795,7 +7798,7 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 817, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 820, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-title {
     font-size: 72px;
     margin-bottom: 25px;
@@ -7803,7 +7806,7 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 817, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 820, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-title {
     font-size: 66px;
     margin-bottom: 20px;
@@ -7811,90 +7814,90 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 817, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 820, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-title {
     font-size: 56px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 817, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 820, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-title {
     font-size: 42px;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  /* line 817, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 820, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-title {
     font-size: 36px;
   }
 }
 
-/* line 843, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 846, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section .hero-desc {
   font-size: 25px;
   padding-right: 50px;
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 843, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 846, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-desc {
     padding-right: 0;
   }
 }
 
-/* line 849, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 852, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section .hero-desc > p {
   line-height: 1.65em;
 }
 
 @media only screen and (max-width: 1199px) {
-  /* line 843, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 846, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-desc {
     font-size: 22px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 843, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 846, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-desc {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  /* line 843, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 846, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-desc {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  /* line 843, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 846, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-desc {
     font-size: 16px;
   }
 }
 
-/* line 865, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 868, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section .form-group-btn {
   margin-top: 30px;
 }
 
-/* line 867, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 870, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section .form-group-btn .btn-primary {
   padding: 15px 25px 13px;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 867, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 870, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .form-group-btn .btn-primary {
     padding: 12px 20px;
   }
 }
 
-/* line 874, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+/* line 877, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
 .frontpage-banner-section .hero-mockup-area {
   margin-right: -120px;
   display: -webkit-box;
@@ -7906,7 +7909,7 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1620px) {
-  /* line 874, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 877, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-mockup-area {
     margin-right: -45px;
     margin-left: -30px;
@@ -7914,7 +7917,7 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 1366px) {
-  /* line 874, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
+  /* line 877, ../../../../../Users/estelle/github/dentallLAB-landing/assets/sass/layout/_introduction.scss */
   .frontpage-banner-section .hero-mockup-area {
     margin-right: 0px;
     margin-left: -60px;
