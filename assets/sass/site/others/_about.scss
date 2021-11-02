@@ -43,6 +43,7 @@
 			}
 		}
 		.waves-effect.bottom {
+			background-size: cover;
 			height: 222px;
 			bottom: -1;
 			@media only screen and (max-width: 1199px) {
@@ -64,6 +65,7 @@
 		.waves-effect.top {
 			height: 215px;
 			top: 0;
+			background-size: cover;
 			@media only screen and (max-width: 1199px) {
 				height: 140px;
 			}
