@@ -585,7 +585,7 @@
 		}
         .hero-title {
             font-size: 65px;
-            font-weight: normal;
+            font-weight: 700;
             line-height: 1.27em;
             margin-bottom: 22px;
             z-index: 100;
@@ -621,6 +621,7 @@
         }
         .hero-mockup-area {
             position: relative;
+            z-index: 30;
             @media only screen and (max-width: 991px) {
                 display: none;
             }
@@ -845,7 +846,11 @@
         }
     }
     .hero-desc {
-        font-size: 25px;
+        font-size: 1.3em;
+        opacity: .7;
+        text-justify: distribute;
+        z-index: 101;
+        overflow: auto;
         padding-right: 50px;
         @media only screen and (max-width: 1199px) {
             padding-right: 0;
