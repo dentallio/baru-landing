@@ -161,6 +161,13 @@
       width:700px;
       height:525px;
     }
+		
+		@media only screen and (max-width: 1024px) {
+			video{
+				width: 49vw;
+				height: auto;
+			}
+		}
 
 		@media only screen and (max-width: 476px) {
 			video{
