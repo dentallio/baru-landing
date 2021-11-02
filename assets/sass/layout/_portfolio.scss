@@ -19,9 +19,13 @@
         }
         .waves-effect.bottom {
             height: 163px;
+            background-size: cover;
+            background: url('assets/images/shape/shape-bottom4.png');
         }
         .waves-effect.top {
             height: 100px;
+            background-size: cover;
+            background: url('assets/images/shape/shape-top2.png');
             @media only screen and (max-width: 991px) {
                 height: 90px;
             }

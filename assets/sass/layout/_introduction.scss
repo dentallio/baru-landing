@@ -621,15 +621,15 @@
         }
         .hero-mockup-area {
             position: relative;
-            z-index: 30;
+            z-index: -1;
             @media only screen and (max-width: 991px) {
-                display: none;
+                // display: none;
             }
             .element-group > .element {
                 z-index: 0;
                 position: absolute;
                 @media only screen and (max-width: 1366px) {
-                    display: none;
+                    // display: none;
                 }
                 &.one {
                     bottom: -130px;
@@ -747,6 +747,7 @@
         .frontpage-banner-content {
             margin-left: -40px;
             padding-right: 120px;
+            z-index: 50;
             @media only screen and (max-width: 1620px) {
                 padding-right: 0px;
             }
