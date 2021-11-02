@@ -9066,7 +9066,7 @@ a:hover, a:active {
 
 /* line 38, ../../../../../Users/estellechen/Documents/GitHub/dentallLAB-landing/assets/sass/layout/_portfolio.scss */
 .portfolio-block.style-one .element-group > .element.one {
-  top: 120px;
+  top: -50px;
   left: calc(50% - 695px);
   -webkit-animation: linear bt-bottomTop-40 4s infinite;
   animation: linear bt-bottomTop-40 4s infinite;
@@ -11053,7 +11053,6 @@ a:hover, a:active {
 
 /* line 527, ../../../../../Users/estellechen/Documents/GitHub/dentallLAB-landing/assets/sass/layout/_sections.scss */
 .work-process-block .element-group > .element {
-  z-index: 1;
   position: absolute;
 }
 
@@ -11081,8 +11080,8 @@ a:hover, a:active {
 
 /* line 542, ../../../../../Users/estellechen/Documents/GitHub/dentallLAB-landing/assets/sass/layout/_sections.scss */
 .work-process-block .element-group > .element.two {
-  top: 80px;
-  left: calc(50% - 290px);
+  top: -50px;
+  left: calc(50% - 390px);
 }
 
 @media only screen and (max-width: 1199px) {

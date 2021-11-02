@@ -525,7 +525,7 @@
 		}
 	}
 	.element-group > .element {
-		z-index: 1;
+		// z-index: 1;
 		position: absolute;
 		@media only screen and (max-width: 1366px) {
 			display: none;
@@ -540,8 +540,8 @@
 				}
 		}
 		&.two {
-			top: 80px;
-			left: calc(50% - 290px);
+			top: -50px;
+			left: calc(50% - 390px);
 		}
 	}
 	&.pd-b-30 {
