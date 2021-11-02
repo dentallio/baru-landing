@@ -614,6 +614,7 @@
             padding-right: 150px;
             @media only screen and (max-width: 575px) {
                 padding-right: 100px;
+                width: 90vw;
             }
             @media only screen and (max-width: 420px) {
                 padding-right: 0;
@@ -632,6 +633,21 @@
                 width: 49vw;
                 height: auto;
               }
+            }
+
+
+            @media only screen and  (orientation: landscape) and (max-width: 800px) {
+              // width: 90vw;
+              text-align: center;
+              overflow: hidden;
+              padding-left: 0px;
+
+              video{
+                width: 80vw;
+                height: auto;
+                padding-bottom: 60px;
+              }
+
             }
 
             @media only screen and (max-width: 470px) {
@@ -868,9 +884,7 @@
         text-justify: distribute;
         z-index: 101;
         overflow: auto;
-        padding-right: 50px;
         @media only screen and (max-width: 1199px) {
-            padding-right: 0;
         }
         > p {
             line-height: 1.65em;
@@ -880,7 +894,6 @@
         }
         @media only screen and (max-width: 767px) {
             font-size: 20px;
-            width: 100vw;
         }
         @media only screen and (max-width: 575px) {
             font-size: 18px;

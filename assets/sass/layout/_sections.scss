@@ -334,6 +334,13 @@
 				height: auto;
 			}
 		}
+
+		@media only screen and  (orientation: landscape) and (max-width: 800px) {
+      video{
+        width: 70vw;
+        height: auto;
+      }
+    }
 		@media only screen and (max-width: 476px) {
 			video{
 				width: 90vw;
