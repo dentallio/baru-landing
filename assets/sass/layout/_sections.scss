@@ -319,8 +319,22 @@
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
 		-webkit-box-pack: end;
-		    -ms-flex-pack: end;
-		        justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+		z-index: -1;
+
+
+    video {
+      width:700px;
+      height:525px;
+    }
+		@media only screen and (max-width: 476px) {
+			video{
+				width: 90vw;
+				height: auto;
+			}
+		}
+
 		.single-thumb {
 			display: inline-block;
 			@media only screen and (max-width: 1199px) {

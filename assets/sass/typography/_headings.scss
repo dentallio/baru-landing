@@ -118,6 +118,7 @@ h4 a:hover {
 	position: relative;
 	margin-bottom: 75px;
 	margin-top: -5px;
+	z-index: 30;
 	@media only screen and (max-width: 1199px) {
 		margin-bottom: 60px;
 	}

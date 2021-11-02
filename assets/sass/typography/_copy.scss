@@ -1,7 +1,7 @@
 /*-------------------------------------------------
     [ ## Others Typography ]
 */
-p { 
+p {
 	margin-bottom: 15px;
 	line-height: $font__line-height-paragraph;
     &:last-child {
@@ -92,7 +92,7 @@ img {
 .el-text-rotation {
 	white-space: nowrap;
     position: relative;
-    display: inline-block;	
+    display: inline-block;
     .inner-el {
     	text-transform: uppercase;
     	letter-spacing: 0.015em;

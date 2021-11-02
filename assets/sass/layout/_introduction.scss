@@ -215,8 +215,9 @@
         .hero-mockup-area {
             .hero-mockup-thumb {
                 display: inline-block;
+
                 @media only screen and (max-width: 991px) {
-                    display: none;
+                    // display: none;
                 }
                 &.one {
                     margin-right: -160px;
@@ -588,7 +589,6 @@
             font-weight: 700;
             line-height: 1.27em;
             margin-bottom: 22px;
-            z-index: 100;
             @media only screen and (max-width: 1366px) {
                 font-size: 54px;
             }
@@ -622,8 +622,18 @@
         .hero-mockup-area {
             position: relative;
             z-index: -1;
-            @media only screen and (max-width: 991px) {
-                // display: none;
+
+            video {
+              width:700px;
+              height:525px;
+            }
+
+            @media only screen and (max-width: 470px) {
+              video{
+                width: 100vw;
+                height: auto;
+                padding-bottom: 60px;
+              }
             }
             .element-group > .element {
                 z-index: 0;
@@ -878,6 +888,10 @@
             padding: 15px 25px 13px;
             @media only screen and (max-width: 767px) {
                 padding: 12px 20px;
+            }
+            @media only screen and (max-width: 500px) {
+                padding: 12px 20px;
+                width: 80vw;
             }
         }
     }

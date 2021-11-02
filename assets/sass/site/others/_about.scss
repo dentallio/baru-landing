@@ -111,6 +111,10 @@
 		.mock-up-thumb {
 			@media only screen and (max-width: 991px) {
 				text-align: center;
+
+				img{
+					padding-bottom: 30px;
+				}
 			}
 		}
 	}
@@ -152,6 +156,20 @@
 		-webkit-box-pack: end;
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
+
+    video {
+      width:700px;
+      height:525px;
+    }
+
+		@media only screen and (max-width: 476px) {
+			video{
+				width: 90vw;
+				height: auto;
+				margin-bottom: 50px;
+			}
+		}
+
 		.single-thumb {
 			display: inline-block;
 			@media only screen and (max-width: 1199px) {
