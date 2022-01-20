@@ -1,2 +1,22 @@
+# dependencies
+/node_modules
+
+# production
+/client/build
+/client/storybook-static
+logs/
+
+# misc
 .DS_Store
-.DS_Store
+.env
+.env.*
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# webstorm
+.idea/
+
+# vim
+*.swp
