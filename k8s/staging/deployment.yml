@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dentall-lab-landing-staging
+  namespace: dentall-staging
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dentall-lab-landing-staging
+  template:
+    metadata:
+      labels:
+        app: dentall-lab-landing-staging
+    spec:
+      containers:
+        - name: dentall-lab-landing-staging
+          image: gcr.io/dentaltw-info/dentall-lab/staging/landing:LAB_LANDING_VERSION_TAG
+          imagePullPolicy: Always
+          livenessProbe:
+            httpGet:
+              path: /healthcheck
+              port: 8022
+            initialDelaySeconds: 60
+            timeoutSeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /healthcheck
+              port: 8022
+          ports:
+            - containerPort: 8022
