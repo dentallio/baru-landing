@@ -8,7 +8,7 @@ env:
   SERVICE_NAME: dentall-lab
 jobs:
   setEnv:
-    if: contains( github.event.base_ref, 'master')
+    if: contains( github.event.base_ref, 'main')
     runs-on: ubuntu-latest
     outputs:
       SOURCE_TAG: ${{ steps.step1.outputs.SOURCE_TAG }}
@@ -25,7 +25,7 @@ jobs:
           echo $TAG
   buildLandingServerToGcr:
     needs: setEnv
-    if: contains( github.event.base_ref, 'master')
+    if: contains( github.event.base_ref, 'main')
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -56,7 +56,7 @@ jobs:
         if: always()
   deployLandingToGke:
     needs: [ setEnv, buildLandingServerToGcr ]
-    if: contains( github.event.base_ref, 'master')
+    if: contains( github.event.base_ref, 'main')
     runs-on: ubuntu-latest
     defaults:
       run:
