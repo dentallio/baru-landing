@@ -1,44 +1,17 @@
 const _ = require('lodash');
 const fs = require('fs');
 const express = require('express');
-const MongoStore = require('connect-mongo');
-const session = require('express-session');
 const compress = require('compression');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const fetch = require('./fetch');
-const { casApiUrl, siteUrl, SESSION_NAME, SESSION_DOMAIN, SESSION_DB, SESSION_DB_COLLECTION } = require('./config');
+const { casApiUrl, siteUrl } = require('./config');
 
 const app = express();
-
-const sessionMap = {
-  resave: false,
-  saveUninitialized: false,
-  secret: 'yubaba web1 need money',
-  proxy: true,
-  name: SESSION_NAME,
-  cookie: {
-    sameSite: 'none',
-    secure: true,
-    expires: new Date(Date.now() + 60000),
-    maxAge: 60000,
-    domain: SESSION_DOMAIN,
-  },
-};
 
 //App Setup
 app.set('trust proxy', true);
 app.set('trust proxy', 'loopback');
-app.use(
-  session({
-    store: MongoStore.create({
-      mongoUrl: SESSION_DB,
-      collection: SESSION_DB_COLLECTION,
-      stringify: false,
-    }),
-    ...sessionMap,
-  }),
-);
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(compress());
