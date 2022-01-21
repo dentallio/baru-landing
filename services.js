@@ -8,6 +8,7 @@ module.exports = ({cookie}) => {
       const data = item.trim().split('=');
       return { ...res, [data[0]]: data[1] };
     }, {});
+    console.log("cookieValues: ", cookieValues);
     const { SCT_ID = ''} = cookieValues;
     if (!_.isEmpty(SCT_ID)) {
       const url = `${casApiUrl}/auth/sctIdVerify?sctId=${SCT_ID}`;
@@ -21,7 +22,8 @@ module.exports = ({cookie}) => {
             if (errorCode) {
               return Promise.resolve({});
             } else {
-              const { user } = data;
+              const { user, exp } = data;
+              console.log("exp: ", exp);
               const {_id: user_id = '', is_clinic_account = false, clinic = {}} = user;
               if (!_.isEmpty(user_id) && is_clinic_account && !_.isEmpty(clinic)) {
                 const { _id, thirdPartyAuth = {}, review_state = 'PENDING' } = clinic;

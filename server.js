@@ -29,10 +29,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/landingLogout', (req, res) => {
-  const { headers: { cookie } } = req;
-  console.log("cookie: ", cookie);
   res.clearCookie('SCT_ID');
-  res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
+  res.json({ msg: 'Logout' })
 });
 
 app.get('/healthcheck', (req, res) => {
