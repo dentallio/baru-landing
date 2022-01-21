@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 8022
 
-CMD ["node", "src/index.js"]
+CMD ["node", "index.js"]
