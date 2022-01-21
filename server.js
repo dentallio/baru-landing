@@ -18,6 +18,7 @@ app.use(compress());
 app.use(cors());
 app.use('/assets', express.static( __dirname + '/assets' ));
 app.get('/', (req, res) => {
+  console.log("cookie: ", req.headers);
   const {sctid = ''} = req.headers;
   if (!_.isEmpty(sctid)) {
     const url = `${casApiUrl}/auth/sctIdVerify?sctId=${sctid}`;
