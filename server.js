@@ -27,6 +27,14 @@ app.get('/', (req, res) => {
       }
     })
 });
+
+app.get('/landingLogout', (req, res) => {
+  const { headers: { cookie } } = req;
+  console.log("cookie: ", cookie);
+  res.clearCookie('SCT_ID');
+  res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
+});
+
 app.get('/healthcheck', (req, res) => {
   res.json({ msg: 'It works' });
 });
