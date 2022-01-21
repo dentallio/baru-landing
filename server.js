@@ -21,14 +21,15 @@ app.get('/', (req, res) => {
   console.log("cookie: ", req.headers);
   const { headers: { cookie } } = req;
   if (cookie) {
-    const values = cookie.split(';').reduce((res, item) => {
+    const cookieValues = cookie.split(';').reduce((res, item) => {
       const data = item.trim().split('=');
       return { ...res, [data[0]]: data[1] };
     }, {});
-
-    const { sctid = ''} = values;
-    if (!_.isEmpty(sctid)) {
-      const url = `${casApiUrl}/auth/sctIdVerify?sctId=${sctid}`;
+    console.log("cookieValues: ", cookieValues);
+    const { SCT_ID = ''} = cookieValues;
+    console.log("SCT_ID = ", SCT_ID);
+    if (!_.isEmpty(SCT_ID)) {
+      const url = `${casApiUrl}/auth/sctIdVerify?sctId=${SCT_ID}`;
       fetch(url, {
         method: 'get',
         headers: { 'Content-Type': 'application/json' },
@@ -46,20 +47,24 @@ app.get('/', (req, res) => {
                 const { isLab = false, labToken = '' } = thirdPartyAuth;
                 if (review_state !== 'GRANT' && _.isEmpty(_id) && isLab && !_.isEmpty(labToken)) {
                   res.redirect(301, `${siteUrl}/${_id}`);
+                } else {
+                  res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
                 }
+              } else {
                 res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
               }
-              res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
             }
           });
+        } else {
+          res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
         }
-        res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
       }).catch(() => res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8')))
     } else {
       res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
     }
+  } else {
+    res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
   }
-  res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
 });
 app.get('/healthcheck', (req, res) => {
   res.json({ msg: 'It works' });
