@@ -1,6 +1,5 @@
 FROM mhart/alpine-node:14
-ARG ENV_SETTING
-ENV ENV_SETTING ${ENV_SETTING:-"staging"}
+
 # Set the working directory to /app
 WORKDIR /
 
@@ -11,10 +10,10 @@ RUN apk add --no-cache curl
 RUN npm config set loglevel warn
 
 # Install app dependencies
-COPY . .
-RUN npm i
+COPY package*.json /
+RUN yarn install && yarn cache clean
 COPY . .
 
 EXPOSE 8022
 
-CMD node -r dotenv/config index.js dotenv_config_path=.env.${ENV_SETTING}
+CMD ["node", "src/index.js"]
