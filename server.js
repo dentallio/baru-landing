@@ -18,16 +18,13 @@ app.use(compress());
 app.use(cors());
 app.use('/assets', express.static( __dirname + '/assets' ));
 app.get('/', (req, res) => {
-  console.log("cookie: ", req.headers);
   const { headers: { cookie } } = req;
   if (cookie) {
     const cookieValues = cookie.split(';').reduce((res, item) => {
       const data = item.trim().split('=');
       return { ...res, [data[0]]: data[1] };
     }, {});
-    console.log("cookieValues: ", cookieValues);
     const { SCT_ID = ''} = cookieValues;
-    console.log("SCT_ID = ", SCT_ID);
     if (!_.isEmpty(SCT_ID)) {
       const url = `${casApiUrl}/auth/sctIdVerify?sctId=${SCT_ID}`;
       fetch(url, {
@@ -45,7 +42,7 @@ app.get('/', (req, res) => {
               if (!_.isEmpty(user_id) && is_clinic_account && !_.isEmpty(clinic)) {
                 const { _id, thirdPartyAuth = {}, review_state = 'PENDING' } = clinic;
                 const { isLab = false, labToken = '' } = thirdPartyAuth;
-                if (review_state !== 'GRANT' && _.isEmpty(_id) && isLab && !_.isEmpty(labToken)) {
+                if (review_state === 'GRANT' && !_.isEmpty(_id) && isLab && !_.isEmpty(labToken)) {
                   res.redirect(301, `${siteUrl}/${_id}`);
                 } else {
                   res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
