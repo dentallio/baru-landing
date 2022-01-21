@@ -19,38 +19,47 @@ app.use(cors());
 app.use('/assets', express.static( __dirname + '/assets' ));
 app.get('/', (req, res) => {
   console.log("cookie: ", req.headers);
-  const {sctid = ''} = req.headers;
-  if (!_.isEmpty(sctid)) {
-    const url = `${casApiUrl}/auth/sctIdVerify?sctId=${sctid}`;
-    fetch(url, {
-      method: 'get',
-      headers: { 'Content-Type': 'application/json' },
-    }).then((res) => {
-      if (res.status >= 200 && res.status < 300) {
-        return Promise.resolve(res.json()).then(data => {
-          const { errorCode } = data;
-          if (errorCode) {
-            res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
-          } else {
-            const { user } = data;
-            const {_id: user_id = '', is_clinic_account = false, clinic = {}} = user;
-            if (!_.isEmpty(user_id) && is_clinic_account && !_.isEmpty(clinic)) {
-              const { _id, thirdPartyAuth = {}, review_state = 'PENDING' } = clinic;
-              const { isLab = false, labToken = '' } = thirdPartyAuth;
-              if (review_state !== 'GRANT' && _.isEmpty(_id) && isLab && !_.isEmpty(labToken)) {
-                res.redirect(301, `${siteUrl}/${_id}`);
+  const { headers: { cookie } } = req;
+  if (cookie) {
+    const values = cookie.split(';').reduce((res, item) => {
+      const data = item.trim().split('=');
+      return { ...res, [data[0]]: data[1] };
+    }, {});
+
+    const { sctid = ''} = values;
+    if (!_.isEmpty(sctid)) {
+      const url = `${casApiUrl}/auth/sctIdVerify?sctId=${sctid}`;
+      fetch(url, {
+        method: 'get',
+        headers: { 'Content-Type': 'application/json' },
+      }).then((res) => {
+        if (res.status >= 200 && res.status < 300) {
+          return Promise.resolve(res.json()).then(data => {
+            const { errorCode } = data;
+            if (errorCode) {
+              res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
+            } else {
+              const { user } = data;
+              const {_id: user_id = '', is_clinic_account = false, clinic = {}} = user;
+              if (!_.isEmpty(user_id) && is_clinic_account && !_.isEmpty(clinic)) {
+                const { _id, thirdPartyAuth = {}, review_state = 'PENDING' } = clinic;
+                const { isLab = false, labToken = '' } = thirdPartyAuth;
+                if (review_state !== 'GRANT' && _.isEmpty(_id) && isLab && !_.isEmpty(labToken)) {
+                  res.redirect(301, `${siteUrl}/${_id}`);
+                }
+                res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
               }
               res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
             }
-            res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
-          }
-        });
-      }
+          });
+        }
+        res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
+      }).catch(() => res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8')))
+    } else {
       res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
-    }).catch(() => res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8')))
-  } else {
-    res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
+    }
   }
+  res.end(fs.readFileSync(__dirname + `/index.html`, 'UTF-8'));
 });
 app.get('/healthcheck', (req, res) => {
   res.json({ msg: 'It works' });
