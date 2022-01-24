@@ -18,3 +18,7 @@ yarn-error.log*
 
 # vim
 *.swp
+
+# k8s, env
+*config-map.yml
+.env*
